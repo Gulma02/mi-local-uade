@@ -1,0 +1,580 @@
+@font-face {
+    font-family: "Bebas Neue";
+    src: url("./fonts/Bebas_Neue/BebasNeue-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("./fonts/Inter/Inter-VariableFont_opsz,wght.ttf");
+}
+
+@font-face {
+    font-family: "Bebas Neue Trial";
+    src: url("./fonts/Bebas_Neue_Trial/BaseNeueTrial-Medium.ttf");
+}
+
+:root {
+    --title-font: "Bebas Neue", sans-serif;
+    --subtitle-font: "Bebas Neue Trial", sans-serif;
+    --text-font: "Inter", sans-serif;
+    --blue: #131A4C;
+    --bordo: #680914;
+    --green: #003D21;
+}
+
+* {
+    margin: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--blue);
+    color: white;
+}
+
+.bar-header {
+    height: 15dvh;
+    background-color: var(--bordo);
+}
+
+.bar-header header {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bar-header header h1 {
+    font-family: var(--title-font), serif;
+    font-size: 124px;
+}
+
+.bar-header header #navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.bar-header header #navigation a{
+    margin-right: 48px;
+    text-decoration: none;
+    color: white;
+    font-family: var(--title-font), serif;
+    font-size: 64px;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-banner img {
+    object-fit: cover;
+    width: 100%;
+    height: 85dvh;
+    opacity: 70%;
+}
+
+.bar-experience {
+    width: 100%;
+    margin-top: 0.1dvh;
+}
+
+.experience-images {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.pe-barra-img {
+    height: 48%;
+    width: 48%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.pe-cuerpo-completo-img {
+    height: 20dvh;
+    width: 30dvw;
+    margin-bottom: 1dvh;
+    margin-right: 12dvw;
+}
+
+.experience-content {
+    background-color: var(--bordo);
+    width: 100dvw;
+    font-weight: 400;
+    margin-top: 4dvh;
+}
+
+.experience-text {
+    text-align: justify;
+    padding: 36px;
+}
+
+.experience-text h1 {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.82px;
+    font-family: var(--title-font);
+    color: white;
+    font-weight: 100;
+    margin: 0;
+}
+
+.experience-text p {
+    font-family: var(--text-font);
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 0.36px;
+}
+
+.experience-text span {
+    font-weight: bold;
+}
+
+
+.offerings {
+    width: 100%;
+    background-color: var(--blue);
+}
+
+.offerings h1 {
+    padding: 5%;
+    font-family: var(--title-font);
+    font-weight: 400;
+    font-size: 92px;
+    line-height: 46px;
+    color: white;
+    letter-spacing: 7.8px;
+    text-align: center;
+    margin: 0 0 2dvh;
+}
+
+.offerings h2 {
+    font-size: 14px;
+    letter-spacing: 0.42px;
+    font-family: var(--text-font);
+    font-weight: 300;
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.offerings-detail {
+    color: white;
+    margin: 0 10%;
+    padding-bottom: 96px;
+    justify-content: space-around;
+    justify-items: center;
+}
+
+.offering-item {
+    text-align: justify;
+    margin: 2dvh 0;
+}
+
+.offering-item h1{
+    padding: 0;
+    font-weight: 500;
+    font-family: var(--subtitle-font);
+    font-size: 16px;
+    text-align: start;
+    letter-spacing: 0.48px;
+}
+
+.offering-item p {
+    font-weight: 400;
+    font-family: var(--text-font);
+    font-size: 12px;
+    letter-spacing: 0.36px;
+}
+
+.drinks-mobile {
+    width: 100%;
+    overflow-x: hidden;
+    display: block
+}
+
+.drinks-gallery {
+    flex-wrap: wrap;
+    width: 110%;
+    display: flex;
+}
+
+.drinks-gallery img{
+    height: auto;
+    width: 50%;
+    object-fit: cover;
+}
+
+.drinks-desktop {
+    display: none;
+}
+
+
+.splide__pagination {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    bottom: 6em !important;
+}
+
+.splide__pagination__page {
+    width: 10px !important;
+    height: 10px !important;
+    margin: 0 4px !important;
+    border-radius: 50%;
+    background-color: white;
+    border: white 1px solid;
+    opacity: 0.7;
+}
+
+.splide__track {
+    font: var(--text-font) !important;
+    height: fit-content !important;
+}
+
+.splide__list {
+    height: fit-content !important;
+}
+
+.splide__slide {
+    width: 90dvw !important;
+    margin: 0 5dvw !important;
+    font-family: var(--text-font);
+    color: white;
+    text-align: justify;
+}
+
+.splide__slide p{
+    font-size: 12px !important;
+    letter-spacing: 0.36px;
+}
+
+.splide__slide p span{
+    font-family: var(--subtitle-font);
+    font-size: 14px;
+}
+
+.splide__slide div{
+    font-size: 12px !important;
+}
+
+.splide__pagination__page.is-active {
+    width: 16px !important;
+    border-radius: 6px;
+    border: white 1px solid !important;
+    background-color: var(--bordo) !important;
+    opacity: 1;
+}
+
+.marcas-slider-buttons {
+    width: 80%;
+    margin: 20% 10% 5dvh 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slide-button {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    color: white;
+    background-color: var(--bordo) !important;
+    border: 2px white solid;
+    padding: 1rem;
+    cursor: pointer;
+    font-weight: 100;
+}
+
+.slide-button:active {
+    background-color: var(--blue) !important;
+}
+
+.marcas-content h1 {
+    font-size: 16px;
+    margin: 5vh 0 0 0;
+}
+
+.marcas-content p {
+    margin: 0;
+}
+
+.bar-footer {
+    width: 100%;
+    background-color: var(--blue);
+    color: white;
+}
+
+.footer-container {
+    width: 90%;
+    padding: 0 5%;
+}
+
+.footer-container h1 {
+    font-family: var(--title-font);
+    font-weight: 400;
+    font-size: 68px;
+    line-height: 35px;
+    text-align: center;
+    margin: 0;
+    letter-spacing: 7.4px;
+    padding-top: 10dvh;
+    vertical-align: bottom;
+}
+
+.footer-container p {
+    margin: 0;
+    font-family: var(--text-font);
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.36px;
+}
+
+.footer-container h2 {
+    font-family: var(--title-font);
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 0.9px;
+    margin-bottom: 0;
+}
+
+.signature-drinks {
+    width: 100%;
+    padding: 10dvh 5dvw;
+    background-color: var(--bordo);
+    display: flex;
+    font-family: var(--title-font), serif;
+    font-size: 12px;
+    align-items: center;
+    letter-spacing: 1.08px;
+    color: white;
+    align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .bar-experience {
+        display: flex;
+        height: 55dvh;
+        justify-content: center;
+        margin: 10dvh 0;
+    }
+
+    .experience-content {
+        position: relative;
+        width: 40%;
+        height: 100%;
+        margin-top: 0;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .experience-images {
+        align-items: start;
+        display: flex;
+        justify-content: center;
+        margin-left: -2dvw;
+        z-index: 1;
+    }
+
+    .bar-counter {
+        width: 80%;
+        height: auto;
+        margin: 0;
+    }
+
+    .experience-text {
+        padding: 6dvh 8dvh;
+    }
+
+    .quien-soy-text p {
+        font-size: 16px;
+        font-weight: 300;
+        letter-spacing: 0.72px;
+        margin: 0 0 10dvh 2dvw;
+    }
+
+    @media screen and (min-width: 1360px) {
+        .quien-soy-text p {
+            font-size: 20px;
+            font-weight: 300;
+            width: 60%;
+            letter-spacing: 0.72px;
+            margin: 0 0 0 2dvw;
+        }
+
+        .experience-text h1 {
+            font-size: 56px;
+            line-height: 52px;
+            letter-spacing: 0.72px;
+        }
+
+        .experience-text p {
+            font-size: 14px;
+            margin: 4dvh 0;
+        }
+
+        .footer-container h1 {
+            padding-top: 24dvh;
+            font-size: 200px;
+            letter-spacing: 30px;
+        }
+    }
+
+    @media screen and (min-width: 1920px) {
+        .quien-soy-title h1 {
+            font-size: 240px;
+            letter-spacing: 24px;
+        }
+
+        .experience-text {
+            padding: 6dvh 8dvh;
+        }
+
+        .experience-text h1 {
+            font-size: 40px;
+            line-height: 44px;
+            letter-spacing: 1.08px;
+        }
+
+        .experience-text p {
+            font-size: 18px;
+            margin: 6dvh 0;
+        }
+    }
+
+
+    .offerings h1 {
+        font-weight: 400;
+        font-size: 200px;
+        line-height: 100px;
+    }
+
+    .offerings h2 {
+        font-size: 24px;
+        letter-spacing: 0.72px;
+        text-align: center;
+    }
+
+    .offerings-detail {
+        display: flex;
+    }
+
+    .offering-item {
+        margin: 8dvh 1dvw 0 1dvw;
+        width: 50%;
+    }
+
+    .offering-item h1{
+        font-size: 24px;
+    }
+
+    .offering-item p {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .drinks-mobile {
+        display: none;
+    }
+
+    .drinks-desktop {
+        width: 100%;
+        overflow-x: hidden;
+        display: block
+    }
+
+    .drinks-row {
+        display: flex;
+    }
+
+    .drinks-row img {
+        width: 25%;
+        object-fit: cover;
+    }
+
+    .drinks-row-alt {
+        display: flex;
+        margin-left: -10dvw;
+    }
+
+    .drinks-row-alt img{
+        width: 28.5%;
+        display: flex;
+    }
+
+    .marcas-title {
+        padding: 16dvh 0;
+        font-size: 200px;
+        line-height: 100px;
+        letter-spacing: 20px;
+    }
+
+    .splide__pagination {
+        bottom: 0 !important;
+    }
+
+    .splide__pagination__page.is-active {
+        width: 16px !important;
+        border-radius: 6px;
+        border: white 1px solid !important;
+        background-color: var(--bordo) !important;
+        opacity: 1;
+    }
+
+    .marcas-slider-buttons {
+        width: 80%;
+        margin: 5dvh 10%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .slide-button {
+        height: 40px;
+        width: 40px;
+    }
+
+    .splide__slide {
+        width: 60% !important;
+        margin: 0 20% !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: var(--text-font);
+        color: white;
+    }
+
+    .splide__slide p{
+        font-size: 14px !important;
+    }
+
+    .splide__slide p span{
+        font-size: 18px;
+    }
+
+    .footer-container {
+        width: 70%;
+        margin: 10dvh 0;
+    }
+
+    .footer-container h1 {
+        padding-top: 24dvh;
+        font-size: 140px;
+        letter-spacing: 30px;
+    }
+
+    .footer-container p {
+        font-size: 24px;
+    }
+
+    .footer-container h2 {
+        font-size: 72px;
+    }
+
+    .signature-drinks {
+        font-size: 48px;
+    }
+}

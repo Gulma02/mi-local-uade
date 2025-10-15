@@ -1,0 +1,19 @@
+Current Name | New Generic Bar Name
+-------------|-------------------
+navbar | bar-header
+main-banner | hero-banner
+proyecto-exitoso | bar-experience
+proyecto-exitoso-content | experience-content
+proyecto-exitoso-text | experience-text
+proyecto-exitoso-imgs | experience-images
+ronda-barra | bar-counter
+cocteleria-impacto | signature-drinks
+servicios | offerings
+servicios-detalle | offerings-detail
+servicios-detalle-text | offering-item
+tragos-mobile | drinks-mobile
+tragos-sets | drinks-gallery
+tragos-desktop | drinks-desktop
+tragos-first-set | drinks-row
+footer | bar-footer
+footer-content | footer-container
